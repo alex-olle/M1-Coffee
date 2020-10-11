@@ -193,7 +193,7 @@ html {
     background-color: #F2EADC;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 100px 40px;
 }
 
@@ -201,12 +201,22 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: center;
+    align-items: center;
     border: solid 2px;
 }
 
+.one-situation > h3 {
+    font-family: 'Black Ops One', cursive;
+    color: #5B3921;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    width: 350px;
+    text-align: center;
+}
+
 .one-situation > img {
-    width: 500px;
+    width: 550px;
+    height: 350px;
 }
 
 .one-situation > p {
@@ -218,7 +228,177 @@ html {
     padding-top: 40px;
 }
 
+.web-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F2EADC;
+    padding: 50px 0;
+}
 
+.web-page > h2 {
+    font-family: 'Black Ops One', cursive;
+    color: #5b3921;
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.selection-wrapper {
+    width: 450px;
+}
+
+.selection-form {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.options-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.options-form > select {
+    font-family: 'Roboto Slab', serif;
+    height: 40px;
+    width: 300px;
+    background: #EEC170;
+    border: none;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.selection-form button {
+    margin: 30px;
+    padding: 10px 30px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 0.8rem;
+    background-color: #5B3921;
+    border-radius: 5px;
+    color: #EEC170;
+    border: none;
+}
+
+.your-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.your-selection > h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.6rem;
+    color: #5b3921;
+    margin-bottom: 30px;
+}
+
+.the-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.the-selection > img {
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.the-selection > h3 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.2rem;
+    color: #5b3921;
+    margin-bottom: 20px;
+}
+
+.the-selection > p {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EEC170;
+    padding: 50px 0;
+}
+
+.contact-us > h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.6rem;
+    color: #5b3921;
+    margin-bottom: 30px;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-form-wrapper > h3 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1rem;
+    color: #5b3921;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-personal-info {
+    padding: 0 30px 20px 30px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #5B3921;
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-form input {
+    font-family: 'Roboto Slab', serif;
+    margin: 5px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color: #F2EADC;
+    color: #5B3921;
+    text-align: center;
+}
+
+.contact-message > input {
+    width: 625px;
+}
+
+.contact-form-wrapper button {
+    margin: 30px;
+    padding: 10px 50px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 0.8rem;
+    background-color: #5B3921;
+    border-radius: 5px;
+    color: #EEC170;
+    border: none;
+}
 
 .main-login {
     background-image: url('../images/img/login/background-login.jpg');

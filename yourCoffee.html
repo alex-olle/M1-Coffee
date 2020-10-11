@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>***PENDING***</title>
+    <title>Your ideal coffee - ***PENDING***</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
@@ -24,14 +24,14 @@
             </div>
         </nav>
         <div class="header-background header-background-your">
-            <h1>PAGE NAME</h1>
+            <h1>YOUR IDEAL COFFEE</h1>
         </div>
     </header>
-    <main>
+    <main class="web-page">
         <h2>Choose your preferences</h2>
-        <section>
-            <form action="">
-                <div>
+        <section class="selection-wrapper">
+            <form class="selection-form" action="">
+                <div class="options-form">
                     <label for="size">Size</label>
                     <select name="size" id="size">
                         <option value="espresso">Espresso</option>
@@ -40,7 +40,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="options-form">
                     <label for="flavour">Flavour</label>
                     <select name="flavour" id="flavour">
                         <option value="none">None</option>
@@ -54,16 +54,16 @@
             </form>
         </section>
 
-        <section>
+        <section class="your-selection">
             <h2>Your ideal coffe is</h2>
-            <div>
+            <div class="the-selection">
                 <img src="./images/img/yourCoffee/espresso.jpg" alt="Espresso">
                 <h3>Espresso</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt.</p>
                 <p><span></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt. </p>
                 <p><span></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt. </p>
             </div>
-            <div>
+            <div class="the-selection">
                 <img src="./images/img/yourCoffee/white-coffee.jpg" alt="Withe Coffee">
                 <h3>White Coffee</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt.</p>
@@ -73,7 +73,7 @@
                 <p><span></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt. </p>
                 <p><span></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt. </p>
             </div>
-            <div>
+            <div class="the-selection">
                 <img src="./images/img/yourCoffee/latte.jpg" alt="Withe Coffee">
                 <h3>Latte</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae ligula laoreet, gravida felis vel, consequat orci. Ut vitae tincidunt.</p>
@@ -85,7 +85,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <p>Ironhack - Web Development - September 2020 - Alejandro Ollé</p>
     </footer>
