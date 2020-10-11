@@ -23,7 +23,7 @@ The MVP will cover the following:
 
 ## Data structure
 
-- **root/**
+- **M1 - Coffee/**
   - index.html
   - yourCoffee.html
   - faq.html
@@ -31,6 +31,7 @@ The MVP will cover the following:
   - signup.html
   - **css/**
     - style.css
+    - reset.css
   - **js/**
     - main.js
     - Signup.js
