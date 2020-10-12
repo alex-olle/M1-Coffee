@@ -1,6 +1,6 @@
 # M1-Coffee
 
-# Coffee Time | Moment 4 Coffee | Coffeened | Your Coffee (Project's name - Temporary, not decided)
+# Café Ollé
 
 ## Description
 
