@@ -124,6 +124,7 @@ html {
     align-items: center;
 }
 
+
 .header-background > h1 {
     font-family: 'Black Ops One', cursive;
     color: #5b3921;
@@ -135,6 +136,14 @@ html {
     text-align: center;
 }
 
+@media (max-width: 720px) {
+    .header-background {
+        height: 300px;
+    }
+    .header-background > h1 {
+        font-size: 2.5rem;
+    }
+}
 .coffee-features-general {
     background-color: #EEC170;
     display: flex;
@@ -191,6 +200,20 @@ html {
     color: #5B3921;
     text-align: center;
     line-height: 45px;
+}
+
+@media (max-width: 1040px) {
+    .coffee-features {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .one-feature {
+        width: 80%;
+        min-width: 350px;
+        margin-bottom: 30px;
+    }
 }
 
 .coffee-situations {
@@ -263,10 +286,11 @@ html {
     color: #5b3921;
     font-size: 1.4rem;
     margin: 20px 0;
+    text-align: center;
 }
 
 .selection-wrapper {
-    width: 450px;
+    width: 30%;
 }
 
 .selection-form {
@@ -274,6 +298,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    width: 100%;
 }
 
 .options-form {
@@ -281,12 +306,14 @@ html {
     justify-content: space-between;
     margin: 20px 0;
     align-items: center;
+    width: 100%;
 }
 
 .options-form > select {
     font-family: 'Roboto Slab', serif;
     height: 40px;
-    width: 300px;
+    width: 90%;
+    max-width: 250px;
     background: #EEC170;
     border: none;
     font-size: 0.8rem;
@@ -348,6 +375,21 @@ html {
     line-height: 40px;
 }
 
+@media (max-width: 600px) {
+    .options-form {
+        flex-direction: column;
+    }
+
+    .options-form > select {
+        width: 250px;
+    }
+
+    .selection-form button {
+        width: 200px;
+        align-self: center;
+    }
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -369,7 +411,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40%;
+    width: 60%;
 }
 
 .contact-form-wrapper > h3 {
@@ -377,6 +419,7 @@ html {
     font-size: 1rem;
     color: #5b3921;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-form {
@@ -395,6 +438,14 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .contact-personal-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
 
 .contact-message {
@@ -459,6 +510,19 @@ html {
     align-items: center;
     padding: 50px;
     border-radius: 20px;
+}
+
+@media (max-width: 370px) {
+    .main-login {
+        height: auto;
+    }
+    
+    .login {
+        width: 100%;
+        /* height: 100%; */
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 .login > h2 {
@@ -542,6 +606,19 @@ html {
     align-items: center;
     padding: 50px;
     border-radius: 20px;
+}
+
+@media (max-width: 450px) {
+    .main-signup {
+        height: auto;
+    }
+    
+    .signup {
+        width: 100%;
+        /* height: 100%; */
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 .signup > h2 {
