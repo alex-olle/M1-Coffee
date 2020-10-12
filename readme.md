@@ -16,7 +16,7 @@ The MVP will cover the following:
 - Signup: A registration form for new users.
 - Login: A sign in form for existing users.
 
-## Backlog
+## Improvements
 
 - Recipes for special coffees
 - Use of all kind of drinks (almond drink, oat drink...)
@@ -31,7 +31,6 @@ The MVP will cover the following:
   - signup.html
   - **css/**
     - style.css
-    - reset.css
   - **js/**
     - main.js
     - Signup.js
@@ -57,4 +56,4 @@ http://coffe-app-ih-aor.herokuapp.com/
 
 ### Slides
 
-https://slides.com/alex-olle/m1-ironhack
+https://docs.google.com/presentation/d/1iNAqzy8md4ec1wLrGsVHlolFCOgKR2Rs7xMQGtJwzFo/edit?usp=sharing
