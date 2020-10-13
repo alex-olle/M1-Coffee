@@ -366,7 +366,7 @@ html {
     font-family: 'Roboto Slab', serif;
     height: 40px;
     width: 80vw;
-    max-width: 250px;
+    max-width: 400px;
     background: #EEC170;
     border: none;
     font-size: 0.8rem;
@@ -428,7 +428,7 @@ html {
     line-height: 40px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1270px) {
     .options-form {
         flex-direction: column;
     }
