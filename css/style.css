@@ -456,6 +456,10 @@ html {
     line-height: 40px;
 }
 
+.the-selection span {
+    font-weight: 700;
+}
+
 @media (max-width: 1270px) {
     .options-form {
         flex-direction: column;
