@@ -95,6 +95,7 @@ class Signup {
 
     this.showSuccessMessage();
     this.removeMessages();
+    this.redirect();
 
     // reiniciar los errores del `validator`
     validator.resetValidator();
@@ -126,6 +127,7 @@ class Signup {
     }
 
     const successMessageP = document.createElement('p');
+    this.errorsWrapper.style.backgroundColor = 'rgba(0, 255, 0, 0.3)'
     successMessageP.innerHTML = "La cuenta ha sido creada con exito";
 
     this.errorsWrapper.appendChild(successMessageP);
@@ -160,6 +162,8 @@ class Signup {
     
     const errorsObj = validator.getErrors();
 
+    this.errorsWrapper.style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
+
     // convertir el objeto a un array de strings
     const errorsStringsArr = Object.values(errorsObj);
 
@@ -171,6 +175,11 @@ class Signup {
     })
 
   }
+
+  redirect = () => {
+    setTimeout( ()=> location.assign('yourCoffee.html'), 1000);
+  }
+
 }
 
 // crear una nueva instanica del Signup (objeto)

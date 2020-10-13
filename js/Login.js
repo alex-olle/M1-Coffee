@@ -39,11 +39,13 @@ class Login {
     if (user) {
       // si el usuario inicia la sesion con exito
       // agrega la clase para cambiar el color y sobrescribir el estilo anterior
+      this.messageContainer.style.backgroundColor = 'rgba(0, 255, 0, 0.3)'
       message.innerHTML = `hola, ${user.email}`;
       message.classList.add("correct-message");
     }
     else {
       // si el inicio de sesión no se ha realizado correctamente
+      this.messageContainer.style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
       message.innerHTML = 'el email o/y password son incorectos';
     }
 
@@ -53,7 +55,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('yourCoffee.html'), 2000);
+    setTimeout( ()=> location.assign('yourCoffee.html'), 1000);
   }
 
 }
