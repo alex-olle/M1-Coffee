@@ -470,6 +470,14 @@ html {
     line-height: 40px;
 }
 
+.p-initial {
+    display: none;
+}
+
+.selected-flavour {
+    display: initial;
+}
+
 .the-selection span {
     font-weight: 700;
 }

@@ -36,10 +36,10 @@ let getFlavour = async () => {
     return yourCoffee;
 }
 
-let showCoffee = async () => {
-    const obj = await getFlavour();
+let showSize = async () => {
+    let obj = await getFlavour();
     // console.log(obj)
-    const size = obj.type;
+    let size = obj.type;
     // console.log(size)
     let divValue = document.getElementById(`${size}`)
     let hiddenForm = document.querySelector('.selection-wrapper')
@@ -52,6 +52,27 @@ let showCoffee = async () => {
         hiddenForm.classList.remove('hidden-form')
         // console.log(divValue)
     }
+}
+
+let showFlavour = async () => {
+    let obj = await getFlavour();
+    // console.log(obj)
+    let flavour = obj.flavor;
+    // console.log(flavour)
+    let pValue = document.querySelector(`.selected-size .${flavour}`)
+    // console.log(pValue)
+    if (pValue.classList.length === 2) {
+        pValue.classList.add('selected-flavour');
+        console.log(pValue)
+    } else {
+        pValue.classList.remove('selected-flavour')
+        console.log(pValue)
+    }
+}
+
+let showCoffee = async () => {
+    let size = await showSize();
+    let flavour = await showFlavour();
 }
 
 const findYourCoffeeBtn = document.getElementById('find-coffee-btn');
