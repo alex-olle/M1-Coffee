@@ -6,3 +6,13 @@ function myFunction() {
       x.className = "nav-bar";
     }
 } 
+
+function userCheck() {
+  var linkCheck = document.getElementById('user-check').attributes[0];
+  console.log(localStorage)
+  if (localStorage.length === 0) {
+    linkCheck.textContent = "./signup.html"
+  } else {
+    linkCheck.textContent = "./yourCoffee.html"
+  }
+}
