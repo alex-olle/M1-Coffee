@@ -12,7 +12,7 @@ const myApi = "http://coffe-app-ih-aor.herokuapp.com/pods"
 let getSize = async () => {
     const data = await fetch (myApi);
     const arrData = await data.json();
-    let sizeValue = document.querySelector('#size option').value
+    let sizeValue = document.querySelector('#size option:checked').value
     let sizeFilterArr = arrData.filter( el => {
         return el.type === sizeValue;
     })
@@ -25,7 +25,7 @@ let getSize = async () => {
 let getFlavour = async () => {
     const sizeArr = await getSize();
     // console.log(sizeArr)
-    let flavourValue = document.querySelector('#flavour option').value
+    let flavourValue = document.querySelector('#flavour option:checked').value
     // console.log(flavourValue)
     let flavourFilterArr = sizeArr.filter( el => {
         return el.flavor === flavourValue;
