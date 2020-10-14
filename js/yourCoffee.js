@@ -37,17 +37,5 @@ let getFlavour = async () => {
     return yourCoffee;
 }
 
-const resProm = async () => {
-    try {
-        await Promise.resolve(getFlavour)
-        return getFlavour();
-    } catch (err) {
-        console.log(err)
-    }
-}
-
-
-// window.addEventListener('load', getFlavour);
-
 const findYourCoffeeBtn = document.getElementById('find-coffee-btn');
-findYourCoffeeBtn.addEventListener("click", resProm)
+findYourCoffeeBtn.addEventListener("click", getFlavour)
