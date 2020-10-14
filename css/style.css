@@ -416,6 +416,10 @@ html {
 }
 
 .your-selection {
+    display: none;
+}
+
+.your-selection.reaction {
     display: flex;
     flex-direction: column;
     align-items: center;
