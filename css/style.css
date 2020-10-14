@@ -400,6 +400,7 @@ html {
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: right center;
+    cursor: pointer;
 }
 
 .selection-form button {
@@ -411,6 +412,7 @@ html {
     border-radius: 5px;
     color: #EEC170;
     border: none;
+    cursor: pointer;
 }
 
 .your-selection {
@@ -574,6 +576,7 @@ html {
     border-radius: 5px;
     color: #EEC170;
     border: none;
+    cursor: pointer;
 }
 
 .main-login {
@@ -658,6 +661,7 @@ html {
     border-radius: 5px;
     color: #EEC170;
     border: none;
+    cursor: pointer;
 }
 
 .message-container {
@@ -746,6 +750,7 @@ html {
     border-radius: 5px;
     color: #EEC170;
     border: none;
+    cursor: pointer;
 }
 
 .message-container {
