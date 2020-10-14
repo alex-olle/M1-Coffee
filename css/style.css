@@ -426,7 +426,7 @@ html {
     padding: 50px 0;
 }
 
-.your-selection > h2 {
+.web-page h2 {
     font-family: 'Black Ops One', cursive;
     font-size: 1.6rem;
     color: #5b3921;
@@ -434,7 +434,15 @@ html {
     text-align: center;
 }
 
+.hidden-form {
+    display: none;
+}
+
 .the-selection {
+    display: none;
+}
+
+.selected-size {
     display: flex;
     flex-direction: column;
     align-items: center;

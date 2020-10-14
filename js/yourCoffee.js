@@ -33,9 +33,26 @@ let getFlavour = async () => {
 
     let yourCoffee = flavourFilterArr[0]
 
-    console.log(yourCoffee);
     return yourCoffee;
 }
 
+let showCoffee = async () => {
+    const obj = await getFlavour();
+    // console.log(obj)
+    const size = obj.type;
+    // console.log(size)
+    let divValue = document.getElementById(`${size}`)
+    let hiddenForm = document.querySelector('.selection-wrapper')
+    if (divValue.classList.length === 1) {
+        divValue.classList.add('selected-size')
+        hiddenForm.classList.add('hidden-form')
+        // console.log(divValue)
+    } else {
+        divValue.classList.remove('selected-size')
+        hiddenForm.classList.remove('hidden-form')
+        // console.log(divValue)
+    }
+}
+
 const findYourCoffeeBtn = document.getElementById('find-coffee-btn');
-findYourCoffeeBtn.addEventListener("click", getFlavour)
+findYourCoffeeBtn.addEventListener("click", showCoffee)
