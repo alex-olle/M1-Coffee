@@ -86,4 +86,4 @@ https://docs.google.com/presentation/d/1iNAqzy8md4ec1wLrGsVHlolFCOgKR2Rs7xMQGtJw
 
 ### Deploy
 
-alex-olle.github.io/M1-Coffee
+https://alex-olle.github.io/M1-Coffee/
