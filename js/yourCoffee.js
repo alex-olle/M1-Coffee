@@ -7,10 +7,16 @@ function yourCoffeeFunction() {
       }
 }
 
-// const selectOptions = () => {
-//     let optionSelected = document.querySelector('#size option:checked').value;
-//     console.log(optionSelected)
-// }
+const selectOptions = () => {
+    let optionSelected = document.querySelector('#size option:checked').value;
+    let flavourOptions = document.querySelector('#flavour')
+    if (optionSelected === "espresso") {
+        flavourOptions.remove(`<option value="hazelnut">Hazelnut</option>`);
+    } else {
+        flavourOptions.add(`<option value="hazelnut">Hazelnut</option>`);
+    }
+    console.log(flavourOptions.childNodes)
+}
 
 const myApi = "http://coffe-app-ih-aor.herokuapp.com/pods"
 
@@ -97,3 +103,6 @@ findYourCoffeeBtn.addEventListener("click", showCoffee)
 
 // const optSelected = document.querySelector('#size option:checked')
 // optSelected.addEventListener("click", selectOptions);
+
+const selectFlavours = document.getElementById('flavour');
+selectFlavours.addEventListener("click", selectOptions);
