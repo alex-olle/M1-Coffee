@@ -12,7 +12,7 @@ The MVP will cover the following:
 
 - Homepage: The homepage will present the app concept and details of the coffee origins and properties.
 - Your Coffee: The user will be able to discover the best kind of coffee for him, only accessible for logged-in users.
-- About us / FAQ: Things you need to know about us and our mentality.
+- FAQ: Things you need to know about us.
 - Signup: A registration form for new users.
 - Login: A sign in form for existing users.
 
@@ -29,16 +29,42 @@ The MVP will cover the following:
   - faq.html
   - login.html
   - signup.html
+  - readme.md
   - **css/**
     - style.css
   - **js/**
     - main.js
+    - Login.js
     - Signup.js
     - User.js
     - Validator.js
+    - Database.js
   - **images/**
-    - img/
-    - logos/
+    - ***img/***
+      - ****FAQ/****
+        - background-FAQ.jpg
+        - coffee-lovers.jpg
+        - cofee.jpg
+        - world.jpg
+      - ****index/****
+        - background-index.jpg
+        - friends.jpg
+        - origins.jpg
+        - work.jpg
+      - ****login/****
+        - background-login.jpg
+      - ****signup/****
+        - background-signin.jpg
+      - ****yourCoffee/****
+        - background-yourCoffee.jpg
+        - espresso.jpg
+        - latte.jpg
+        - white-coffee.jpg
+    - ***logos/***
+      - ****nav-bar/****
+        - noun_Coffee_836672.png
+      - ****your-coffee/****
+        - arrow.png
 
 ## Links
 
@@ -52,8 +78,12 @@ https://github.com/alex-olle/M1-Coffee
 
 ### APIs
 
-http://coffe-app-ih-aor.herokuapp.com/
+http://coffe-app-ih-aor.herokuapp.com/pods
 
 ### Slides
 
 https://docs.google.com/presentation/d/1iNAqzy8md4ec1wLrGsVHlolFCOgKR2Rs7xMQGtJwzFo/edit?usp=sharing
+
+### Deploy
+
+alex-olle.github.io/M1-Coffee
