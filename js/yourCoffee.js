@@ -12,9 +12,9 @@ const selectOptions = () => {
     let flavourOptions = document.querySelector('#flavour')
     // console.log(flavourOptions)
     if (optionSelected === "espresso") {
-        flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option>'
+        flavourOptions.innerHTML = '<option value="none">None</option><option value="vanilla">Vanilla</option><option value="caramel">Caramel</option>'
     } else {
-        flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option><option value="mocha">Mocha</option><option value="hazelnut">Hazelnut</option>'
+        flavourOptions.innerHTML = '<option value="none">None</option><option value="vanilla">Vanilla</option><option value="caramel">Caramel</option><option value="mocha">Mocha</option><option value="hazelnut">Hazelnut</option>'
     }
     // console.log(flavourOptions)
 }
@@ -37,9 +37,12 @@ let getFlavour = async () => {
     // console.log(sizeArr)
     let flavourValue = document.querySelector('#flavour option:checked').value
     // console.log(flavourValue)
-    // if (flavourValue === "none") {
-    //     return "hola"
-    // } else {
+    if (flavourValue === "none") {
+        let noneObj = {
+            type: sizeArr[0].type
+        }
+        return noneObj
+    } else {
         let flavourFilterArr = sizeArr.filter( el => {
             return el.flavor === flavourValue;
         })
@@ -47,7 +50,7 @@ let getFlavour = async () => {
         let yourCoffee = flavourFilterArr[0]
     
         return yourCoffee;
-    // }
+    }
 }
 
 let showSize = async () => {
