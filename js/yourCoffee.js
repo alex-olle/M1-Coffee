@@ -19,7 +19,7 @@ const selectOptions = () => {
     // console.log(flavourOptions)
 }
 
-const myApi = "http://coffe-app-ih-aor.herokuapp.com/pods"
+const myApi = "https://coffe-app-ih-aor.herokuapp.com/pods"
 
 let getSize = async () => {
     const data = await fetch (myApi);
