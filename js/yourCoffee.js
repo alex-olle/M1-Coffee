@@ -13,7 +13,6 @@ const selectOptions = () => {
     // console.log(flavourOptions)
     if (optionSelected === "espresso") {
         flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option>'
-        //añadir todos con innerHTML
     } else {
         flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option><option value="mocha">Mocha</option><option value="hazelnut">Hazelnut</option>'
     }
