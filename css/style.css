@@ -350,6 +350,10 @@ html {
     }
 }
 
+.cursiva {
+    font-style: italic;
+}
+
 .web-page {
     display: flex;
     flex-direction: column;
