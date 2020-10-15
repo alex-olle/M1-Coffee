@@ -37,6 +37,7 @@
                 <div class="options-form">
                     <label for="size">Size</label>
                     <select name="size" id="size">
+                        <option class="choose-your" value="choose-your">Choose your size...</option>
                         <option class="size" value="espresso">Espresso</option>
                         <option class="size" value="small">Small</option>
                         <option class="size" value="large">Large</option>
@@ -45,13 +46,12 @@
 
                 <div class="options-form">
                     <label for="flavour">Additional Flavour</label>
-                    <select name="flavour" id="flavour">
-                        <!-- <option value="none">None</option> -->
-                        <!-- <option value="mocha">Mocha</option> -->
-                        <option value="vanilla">Vanilla</option>
-                        <option value="caramel">Caramel</option>
-                        <!-- <option value="hazelnut">Hazelnut</option> -->
-                    </select>
+                    <select name="flavour" id="flavour"></select>
+                    <!-- <option value="none">None</option> -->
+                    <!-- <option value="vanilla">Vanilla</option>
+                    <option value="caramel">Caramel</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="hazelnut">Hazelnut</option> -->
                 </div>
                 <button type="button" id="find-coffee-btn" onclick="yourCoffeeFunction()">Find your ideal coffee!</button>
 

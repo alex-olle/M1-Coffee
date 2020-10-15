@@ -10,12 +10,14 @@ function yourCoffeeFunction() {
 const selectOptions = () => {
     let optionSelected = document.querySelector('#size option:checked').value;
     let flavourOptions = document.querySelector('#flavour')
+    // console.log(flavourOptions)
     if (optionSelected === "espresso") {
-        flavourOptions.remove(`<option value="hazelnut">Hazelnut</option>`);
+        flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option>'
+        //añadir todos con innerHTML
     } else {
-        flavourOptions.add(`<option value="hazelnut">Hazelnut</option>`);
+        flavourOptions.innerHTML = '<option value="vanilla">Vanilla</option><option value="caramel">Caramel</option><option value="mocha">Mocha</option><option value="hazelnut">Hazelnut</option>'
     }
-    console.log(flavourOptions.childNodes)
+    // console.log(flavourOptions)
 }
 
 const myApi = "http://coffe-app-ih-aor.herokuapp.com/pods"
@@ -30,8 +32,6 @@ let getSize = async () => {
 
     return sizeFilterArr
 }
-
-// getSize();
 
 let getFlavour = async () => {
     const sizeArr = await getSize();
@@ -104,5 +104,5 @@ findYourCoffeeBtn.addEventListener("click", showCoffee)
 // const optSelected = document.querySelector('#size option:checked')
 // optSelected.addEventListener("click", selectOptions);
 
-const selectFlavours = document.getElementById('flavour');
-selectFlavours.addEventListener("click", selectOptions);
+const selectSize = document.getElementById('size');
+selectSize.addEventListener("click", selectOptions);

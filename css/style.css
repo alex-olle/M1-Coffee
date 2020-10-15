@@ -111,7 +111,7 @@ html {
     .nav-bar a {
         display: none;
         /* visibility: hidden; */
-        transition: all 0.2s ease-in-out 0s;
+        /* transition: all 0.2s ease-in-out 0s; */
     }
     .nav-bar > a.icon {
         /* visibility: visible; */
@@ -139,6 +139,7 @@ html {
 
     .nav-bar.responsive .nav-bar-links {
         flex-direction: column;
+         transition: all 0.2s ease-in-out 1s;
     }
 
      .nav-bar.responsive a.icon {
@@ -322,12 +323,12 @@ html {
 }
 
 .one-situation:hover p {
-    padding: 40px 0;
+    padding: 20px 0;
     visibility: visible;
     opacity: 1;
     /* margin  */
     transition-delay: 0.5s;
-    height: 100px;
+    height: 180px;
 } 
 
 @media (max-width: 1300px) {
