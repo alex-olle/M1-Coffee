@@ -779,6 +779,11 @@ html {
     cursor: pointer;
 }
 
+.signup-form button:disabled, .button:disabled{
+    background-color: rgba(91, 57, 33, 0.7);
+    cursor: auto;
+}
+
 .message-container {
     width: 100%;
     max-width: 800px;
