@@ -128,7 +128,7 @@ class Signup {
 
     const successMessageP = document.createElement('p');
     this.errorsWrapper.style.backgroundColor = 'rgba(0, 255, 0, 0.3)'
-    successMessageP.innerHTML = "La cuenta ha sido creada con exito";
+    successMessageP.innerHTML = "User has been created successfully";
 
     this.errorsWrapper.appendChild(successMessageP);
 

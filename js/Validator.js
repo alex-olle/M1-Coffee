@@ -4,10 +4,10 @@
 class Validator {
   constructor() {
     // mensajes predeterminados
-    this.invalidEmailError = 'Intorduce un email válido';
-    this.emailExistsError = 'Este email ya está registrado';
-    this.passwordError = 'Introduce una contraseña de 6 o más carácteres';
-    this.repeatPasswordError = 'Los campos no coinciden';
+    this.invalidEmailError = 'Write a valid mail';
+    this.emailExistsError = 'This mail is already signed up';
+    this.passwordError = 'Introduce a password with 6 characters minimum';
+    this.repeatPasswordError = 'Passwords not matching';
 
     // objeto con los errores que vamos a mostrar al usuario
     this.errors = {
